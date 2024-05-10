@@ -203,7 +203,7 @@ nav{
     word-spacing: 10px;
     cursor: pointer;
     padding: 0 10px;
-    overflow: hidden;
+    overflow-y: hidden;
 }
 /* responsiveness for content*/
 
