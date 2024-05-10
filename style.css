@@ -295,6 +295,7 @@ nav{
         letter-spacing: 0;
         word-spacing: 0;
         padding: 0 0;
+        overflow-y: hidden;
     }
 }
 
