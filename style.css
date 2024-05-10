@@ -179,6 +179,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 @keyframes inanimation{
@@ -202,6 +203,7 @@ nav{
     word-spacing: 10px;
     cursor: pointer;
     padding: 0 10px;
+    overflow: hidden;
 }
 /* responsiveness for content*/
 
@@ -272,7 +274,7 @@ nav{
         height: 5px;
     }
     .type h3{
-        font-size: 0.1rem;
+        font-size: 0.15rem;
         font-weight: 50;
     }
     .contentName{
@@ -323,7 +325,7 @@ nav{
     display: none;
 }
 .menu div{
-    width: 30px;
+    width: 35px;
     height: 30px;
     cursor: pointer;
 }
@@ -366,6 +368,9 @@ nav{
     }
 }
 @media screen and (max-width: 560px){
+    .nvg{
+        padding: 5px;
+    }
     .navigation{
         display: none;
         position: fixed;
@@ -381,6 +386,9 @@ nav{
     }
     .navigation li{
         font-size: 0.7rem;
+    }
+    .logo{
+        margin-top: 5px;
     }
     .logo h1{
         font-size: 1rem;
