@@ -204,6 +204,8 @@ nav{
     cursor: pointer;
     padding: 0 10px;
     overflow-y: hidden;
+    padding: 0 10px;
+    overflow-y: hidden;
 }
 /* responsiveness for content*/
 
