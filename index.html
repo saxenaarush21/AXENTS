@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axents</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar/nav.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="nvg">
+            <div class="logo">
+                <h1>AXENTS</h1>
+            </div>
+            <div class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </div>
+            <div class="menu">
+                <div>
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </ul>
+    </nav>
+    <section class="slider">
+        <div class="container">
+            <div class="slider-wraper" onscroll="checkScroll()">
+                <img class="images img1" src="images/one_peice.png" alt="">
+                <img class="images img2" src="images/naruto.png" alt="">
+                <img class="images img3" src="images/deathnote.png" alt="">
+                <img class="images img4" src="images/demonslayer.png" alt="">
+                <img class="images img5" src="images/kaisen.png" alt="">
+                <img class="images img6" src="images/pokemon.png" alt="">
+            </div>
+            <div class="slider-nav">
+                <button class="btn active" id="btn1" onclick="toggleActive(this)" name="radio-btn" value="0"></button>
+                <button class="btn" id="btn2" onclick="toggleActive(this)" name="radio-btn" value="1"></button>
+                <button class="btn" id="btn3" onclick="toggleActive(this)" name="radio-btn" value="2"></button>
+                <button class="btn" id="btn4" onclick="toggleActive(this)" name="radio-btn" value="3"></button>
+                <button class="btn" id="btn5" onclick="toggleActive(this)" name="radio-btn" value="4"></button>
+                <button class="btn" id="btn6" onclick="toggleActive(this)" name="radio-btn" value="5"></button>
+            </div>
+            <div class="content">
+                <div class="type">
+                    <h3>ADVENTURE</h3>
+                </div>
+                <div class="contentName">
+                    <h1>One Peice</h1>
+                </div>
+                <div class="watch">
+                    <button>WATCH NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="slider/slider.js"></script>
+    <script src="navbar/nav.js"></script>
+</body>
+</html>

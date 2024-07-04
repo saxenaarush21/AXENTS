@@ -1,0 +1,138 @@
+nav{
+    width: 100vw;
+    height: 60px;
+    background-color: #000025;
+    border-bottom: solid 1px rgba(245, 245, 245, 0.6);
+}
+.nvg{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    color: whitesmoke;
+    margin: 5px 10px;
+    font-family: sans-serif;
+}
+
+.navigation{
+    display: flex;
+    position: absolute;
+    right: 0;
+}
+.navigation li{
+    margin: 10px;
+    margin-right: 50px;
+}
+
+.navigation li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: sans-serif;
+}
+
+/* Navbar responsiveness */
+.menu{
+    display: none;
+}
+.menu div{
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+}
+.menu div span{
+    background: whitesmoke;
+    width: 30px;
+    height: 3px;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease, width 0.3s ease;
+}
+.menu .line1{
+    transform: translate(0 ,-10px);
+}
+.menu .line3{
+    transform: translate(0 ,7px);
+}
+.openmenu .line1{
+    transform: rotate(-45deg);
+}
+.openmenu .line3{
+    transform: rotate(45deg);
+}
+.openmenu .line2{
+    width: 0;
+}
+@media screen and (max-width: 750px) and (min-width: 561px){
+    .navigation li{
+        margin: 10px;
+        margin-right: 20px;
+    }
+    .navigation li a{
+        font-size: 0.85rem;
+    }
+    .logo h1{
+        font-size: 1.3rem;
+    }
+}
+@media screen and (max-width: 560px){
+    .nvg{
+        padding: 5px;
+    }
+    .navigation{
+        display: none;
+        position: fixed;
+        inset: 0 0 0 60%;
+        background: hsl(0 0% 100% / 0.1);
+        backdrop-filter: blur(1rem);
+        z-index: 99;
+        padding: min(10vh, 10rem) 10px;
+        animation: entry 0.5s ease;
+    }
+    .animate-out{
+        animation: exit 0.5s ease;
+    }
+    .navigation li{
+        font-size: 0.7rem;
+    }
+    .logo{
+        margin-top: 5px;
+    }
+    .logo h1{
+        font-size: 1rem;
+    }
+    nav{
+        height: 45px;
+        border-bottom: solid 3px rgba(245, 245, 245, 0.6);
+    }
+    @keyframes entry {
+        from{
+            transform: translateX(100%);
+        }
+        to{
+            transform: translateX(0%);
+        }
+    }
+    @keyframes exit {
+        from{
+            transform: translateX(0%);
+        }
+        to{
+            transform: translateX(100%);
+        }
+    }
+    .menu{
+        display: block;
+        z-index: 100;
+    }
+}
